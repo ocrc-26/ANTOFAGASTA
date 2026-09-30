@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafío Algebraico - HTML & CSS</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- FORMULARIO CONTENEDOR PARA REINICIAR ESTADOS CON TYPE="RESET" -->
+  <form class="quiz-form">
+
+    <!-- NAVEGACIÓN PRINCIPAL ENTRE NIVELES -->
+    <input type="radio" name="screen-nav" id="nav-menu" checked>
+    <input type="radio" name="screen-nav" id="nav-l1">
+    <input type="radio" name="screen-nav" id="nav-l2">
+    <input type="radio" name="screen-nav" id="nav-l3">
+    <input type="radio" name="screen-nav" id="nav-l4">
+
+    <div class="app-card">
+
+      <!-- ESCUDO / IDENTIDAD VISUAL -->
+      <aside class="brand-panel" aria-label="Unidad Educativa Antofagasta">
+        <div class="brand-glow"></div>
+        <img src="assets/antofagasta.png" alt="Escudo de la Unidad Educativa Antofagasta" class="school-shield">
+        <div class="brand-caption">
+          <span>UNIDAD EDUCATIVA</span>
+          <strong>ANTOFAGASTA</strong>
+          <small>TUPIZA · BOLIVIA</small>
+        </div>
+      </aside>
+
+
+
+      <!-- ==================== MENÚ PRINCIPAL ==================== -->
+      <section class="screen screen-menu">
+        <header class="header">
+          <h1>📐 Desafío Algebraico</h1>
+          <p>Selecciona un nivel para comenzar (Pregunta por pregunta)</p>
+        </header>
+
+        <div class="level-grid">
+          <label for="nav-l1" class="btn-level">
+            <span class="badge badge-easy">Nivel 1</span>
+            <h3>Fácil / Introductorio</h3>
+            <p>Ecuaciones simples de 1er grado</p>
+            <small>10 Preguntas paso a paso</small>
+          </label>
+
+          <label for="nav-l2" class="btn-level">
+            <span class="badge badge-medium">Nivel 2</span>
+            <h3>Medio / Intermedio</h3>
+            <p>Paréntesis y términos semejantes</p>
+            <small>10 Preguntas paso a paso</small>
+          </label>
+
+          <label for="nav-l3" class="btn-level">
+            <span class="badge badge-hard">Nivel 3</span>
+            <h3>Difícil / Avanzado</h3>
+            <p>Productos notables y factorización</p>
+            <small>10 Preguntas paso a paso</small>
+          </label>
+
+          <label for="nav-l4" class="btn-level">
+            <span class="badge badge-expert">Nivel 4</span>
+            <h3>Experto / Desafío</h3>
+            <p>Sistemas 2x2, cubos y logaritmos</p>
+            <small>10 Preguntas paso a paso</small>
+          </label>
+        </div>
+      </section>
+
+      <!-- ==================== NIVEL 1: FÁCIL ==================== -->
+      <section class="screen screen-level screen-l1">
+        <div class="level-header">
+          <h2>Nivel 1: Álgebra Básico</h2>
+          <label for="nav-menu" class="btn-back">⬅ Menú Principal</label>
+        </div>
+
+        <input type="radio" name="l1_step" id="l1_step_1" checked>
+        <input type="radio" name="l1_step" id="l1_step_2">
+        <input type="radio" name="l1_step" id="l1_step_3">
+        <input type="radio" name="l1_step" id="l1_step_4">
+        <input type="radio" name="l1_step" id="l1_step_5">
+        <input type="radio" name="l1_step" id="l1_step_6">
+        <input type="radio" name="l1_step" id="l1_step_7">
+        <input type="radio" name="l1_step" id="l1_step_8">
+        <input type="radio" name="l1_step" id="l1_step_9">
+        <input type="radio" name="l1_step" id="l1_step_10">
+        <input type="radio" name="l1_step" id="l1_step_end">
+
+        <!-- P1 -->
+        <div class="q-block q-step-1">
+          <div class="q-title">Pregunta 1 de 10: ¿Cuál es el valor de x en x + 7 = 15?</div>
+          <div class="options">
+            <input type="radio" name="l1_q1" id="l1_q1_a1" class="opt-wrong"><label for="l1_q1_a1">x = 22</label>
+            <input type="radio" name="l1_q1" id="l1_q1_a2" class="opt-correct"><label for="l1_q1_a2">x = 8</label>
+            <input type="radio" name="l1_q1" id="l1_q1_a3" class="opt-wrong"><label for="l1_q1_a3">x = 7</label>
+            <input type="radio" name="l1_q1" id="l1_q1_a4" class="opt-wrong"><label for="l1_q1_a4">x = 105</label>
+          </div>
+          <div class="action-footer"><label for="l1_step_2" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P2 -->
+        <div class="q-block q-step-2">
+          <div class="q-title">Pregunta 2 de 10: Simplifica la expresión 3x + 5x</div>
+          <div class="options">
+            <input type="radio" name="l1_q2" id="l1_q2_a1" class="opt-wrong"><label for="l1_q2_a1">8x²</label>
+            <input type="radio" name="l1_q2" id="l1_q2_a2" class="opt-correct"><label for="l1_q2_a2">8x</label>
+            <input type="radio" name="l1_q2" id="l1_q2_a3" class="opt-wrong"><label for="l1_q2_a3">15x</label>
+            <input type="radio" name="l1_q2" id="l1_q2_a4" class="opt-wrong"><label for="l1_q2_a4">15x²</label>
+          </div>
+          <div class="action-footer"><label for="l1_step_3" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P3 -->
+        <div class="q-block q-step-3">
+          <div class="q-title">Pregunta 3 de 10: Si 4x = 36, ¿cuánto vale x?</div>
+          <div class="options">
+            <input type="radio" name="l1_q3" id="l1_q3_a1" class="opt-correct"><label for="l1_q3_a1">x = 9</label>
+            <input type="radio" name="l1_q3" id="l1_q3_a2" class="opt-wrong"><label for="l1_q3_a2">x = 32</label>
+            <input type="radio" name="l1_q3" id="l1_q3_a3" class="opt-wrong"><label for="l1_q3_a3">x = 144</label>
+            <input type="radio" name="l1_q3" id="l1_q3_a4" class="opt-wrong"><label for="l1_q3_a4">x = 6</label>
+          </div>
+          <div class="action-footer"><label for="l1_step_4" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P4 -->
+        <div class="q-block q-step-4">
+          <div class="q-title">Pregunta 4 de 10: Expresa en lenguaje algebraico "El doble de un número aumentado en 3"</div>
+          <div class="options">
+            <input type="radio" name="l1_q4" id="l1_q4_a1" class="opt-wrong"><label for="l1_q4_a1">x² + 3</label>
+            <input type="radio" name="l1_q4" id="l1_q4_a2" class="opt-correct"><label for="l1_q4_a2">2x + 3</label>
+            <input type="radio" name="l1_q4" id="l1_q4_a3" class="opt-wrong"><label for="l1_q4_a3">2(x + 3)</label>
+            <input type="radio" name="l1_q4" id="l1_q4_a4" class="opt-wrong"><label for="l1_q4_a4">x/2 + 3</label>
+          </div>
+          <div class="action-footer"><label for="l1_step_5" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P5 -->
+        <div class="q-block q-step-5">
+          <div class="q-title">Pregunta 5 de 10: Resuelve 2x - 4 = 10</div>
+          <div class="options">
+            <input type="radio" name="l1_q5" id="l1_q5_a1" class="opt-wrong"><label for="l1_q5_a1">x = 3</label>
+            <input type="radio" name="l1_q5" id="l1_q5_a2" class="opt-wrong"><label for="l1_q5_a2">x = 5</label>
+            <input type="radio" name="l1_q5" id="l1_q5_a3" class="opt-correct"><label for="l1_q5_a3">x = 7</label>
+            <input type="radio" name="l1_q5" id="l1_q5_a4" class="opt-wrong"><label for="l1_q5_a4">x = 14</label>
+          </div>
+          <div class="action-footer"><label for="l1_step_6" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P6 -->
+        <div class="q-block q-step-6">
+          <div class="q-title">Pregunta 6 de 10: Evalúa la expresión 3a + 2 para a = 4</div>
+          <div class="options">
+            <input type="radio" name="l1_q6" id="l1_q6_a1" class="opt-correct"><label for="l1_q6_a1">14</label>
+            <input type="radio" name="l1_q6" id="l1_q6_a2" class="opt-wrong"><label for="l1_q6_a2">18</label>
+            <input type="radio" name="l1_q6" id="l1_q6_a3" class="opt-wrong"><label for="l1_q6_a3">9</label>
+            <input type="radio" name="l1_q6" id="l1_q6_a4" class="opt-wrong"><label for="l1_q6_a4">24</label>
+          </div>
+          <div class="action-footer"><label for="l1_step_7" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P7 -->
+        <div class="q-block q-step-7">
+          <div class="q-title">Pregunta 7 de 10: ¿Cuál es el grado del término 5x³?</div>
+          <div class="options">
+            <input type="radio" name="l1_q7" id="l1_q7_a1" class="opt-wrong"><label for="l1_q7_a1">Grado 5</label>
+            <input type="radio" name="l1_q7" id="l1_q7_a2" class="opt-correct"><label for="l1_q7_a2">Grado 3</label>
+            <input type="radio" name="l1_q7" id="l1_q7_a3" class="opt-wrong"><label for="l1_q7_a3">Grado 15</label>
+            <input type="radio" name="l1_q7" id="l1_q7_a4" class="opt-wrong"><label for="l1_q7_a4">Grado 1</label>
+          </div>
+          <div class="action-footer"><label for="l1_step_8" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P8 -->
+        <div class="q-block q-step-8">
+          <div class="q-title">Pregunta 8 de 10: Resuelve x / 3 = 6</div>
+          <div class="options">
+            <input type="radio" name="l1_q8" id="l1_q8_a1" class="opt-wrong"><label for="l1_q8_a1">x = 2</label>
+            <input type="radio" name="l1_q8" id="l1_q8_a2" class="opt-correct"><label for="l1_q8_a2">x = 18</label>
+            <input type="radio" name="l1_q8" id="l1_q8_a3" class="opt-wrong"><label for="l1_q8_a3">x = 9</label>
+            <input type="radio" name="l1_q8" id="l1_q8_a4" class="opt-wrong"><label for="l1_q8_a4">x = 3</label>
+          </div>
+          <div class="action-footer"><label for="l1_step_9" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P9 -->
+        <div class="q-block q-step-9">
+          <div class="q-title">Pregunta 9 de 10: Simplifica 10y - 3y + 2y</div>
+          <div class="options">
+            <input type="radio" name="l1_q9" id="l1_q9_a1" class="opt-wrong"><label for="l1_q9_a1">5y</label>
+            <input type="radio" name="l1_q9" id="l1_q9_a2" class="opt-wrong"><label for="l1_q9_a2">15y</label>
+            <input type="radio" name="l1_q9" id="l1_q9_a3" class="opt-correct"><label for="l1_q9_a3">9y</label>
+            <input type="radio" name="l1_q9" id="l1_q9_a4" class="opt-wrong"><label for="l1_q9_a4">9y³</label>
+          </div>
+          <div class="action-footer"><label for="l1_step_10" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P10 -->
+        <div class="q-block q-step-10">
+          <div class="q-title">Pregunta 10 de 10: Si x + y = 10 y x = 4, ¿cuánto vale y?</div>
+          <div class="options">
+            <input type="radio" name="l1_q10" id="l1_q10_a1" class="opt-correct"><label for="l1_q10_a1">y = 6</label>
+            <input type="radio" name="l1_q10" id="l1_q10_a2" class="opt-wrong"><label for="l1_q10_a2">y = 14</label>
+            <input type="radio" name="l1_q10" id="l1_q10_a3" class="opt-wrong"><label for="l1_q10_a3">y = 40</label>
+            <input type="radio" name="l1_q10" id="l1_q10_a4" class="opt-wrong"><label for="l1_q10_a4">y = 2.5</label>
+          </div>
+          <div class="action-footer"><label for="l1_step_end" class="btn-next">Ver Resultados 📊</label></div>
+        </div>
+
+        <!-- RESULTADOS -->
+        <div class="result-card">
+          <h3>📊 Reporte de Desempeño - Nivel 1</h3>
+          <p>A continuación se muestra el desglose exacto de tus respuestas:</p>
+
+          <div class="score-grid">
+            <div class="score-box box-success">
+              <span class="score-val count-correct-l1"></span>
+              <span class="score-lbl">Correctas</span>
+            </div>
+            <div class="score-box box-danger">
+              <span class="score-val count-wrong-l1"></span>
+              <span class="score-lbl">Incorrectas</span>
+            </div>
+          </div>
+
+          <div class="breakdown">
+            <h4>📌 Solucionario de Preguntas</h4>
+            <ul>
+              <li><strong>P1 (x + 7 = 15):</strong> Correcta: <code>x = 8</code></li>
+              <li><strong>P2 (3x + 5x):</strong> Correcta: <code>8x</code></li>
+              <li><strong>P3 (4x = 36):</strong> Correcta: <code>x = 9</code></li>
+              <li><strong>P4 (El doble + 3):</strong> Correcta: <code>2x + 3</code></li>
+              <li><strong>P5 (2x - 4 = 10):</strong> Correcta: <code>x = 7</code></li>
+              <li><strong>P6 (3a + 2; a=4):</strong> Correcta: <code>14</code></li>
+              <li><strong>P7 (Grado de 5x³):</strong> Correcta: <code>Grado 3</code></li>
+              <li><strong>P8 (x/3 = 6):</strong> Correcta: <code>x = 18</code></li>
+              <li><strong>P9 (10y - 3y + 2y):</strong> Correcta: <code>9y</code></li>
+              <li><strong>P10 (x + y = 10; x=4):</strong> Correcta: <code>y = 6</code></li>
+            </ul>
+          </div>
+
+          <!-- BOTÓN TIPO RESET PARA VACIAR ELECCIONES Y VOLVER AL MENÚ -->
+          <button type="reset" class="btn-restart">🔄 Volver al Menú</button>
+        </div>
+      </section>
+
+      <!-- ==================== NIVEL 2: INTERMEDIO ==================== -->
+      <section class="screen screen-level screen-l2">
+        <div class="level-header">
+          <h2>Nivel 2: Intermedio</h2>
+          <label for="nav-menu" class="btn-back">⬅ Menú Principal</label>
+        </div>
+
+        <input type="radio" name="l2_step" id="l2_step_1" checked>
+        <input type="radio" name="l2_step" id="l2_step_2">
+        <input type="radio" name="l2_step" id="l2_step_3">
+        <input type="radio" name="l2_step" id="l2_step_4">
+        <input type="radio" name="l2_step" id="l2_step_5">
+        <input type="radio" name="l2_step" id="l2_step_6">
+        <input type="radio" name="l2_step" id="l2_step_7">
+        <input type="radio" name="l2_step" id="l2_step_8">
+        <input type="radio" name="l2_step" id="l2_step_9">
+        <input type="radio" name="l2_step" id="l2_step_10">
+        <input type="radio" name="l2_step" id="l2_step_end">
+
+        <!-- P1 -->
+        <div class="q-block q-step-1">
+          <div class="q-title">Pregunta 1 de 10: Simplifica 2(x + 4) - 3</div>
+          <div class="options">
+            <input type="radio" name="l2_q1" id="l2_q1_a1" class="opt-correct"><label for="l2_q1_a1">2x + 5</label>
+            <input type="radio" name="l2_q1" id="l2_q1_a2" class="opt-wrong"><label for="l2_q1_a2">2x + 8</label>
+            <input type="radio" name="l2_q1" id="l2_q1_a3" class="opt-wrong"><label for="l2_q1_a3">2x + 1</label>
+            <input type="radio" name="l2_q1" id="l2_q1_a4" class="opt-wrong"><label for="l2_q1_a4">x + 5</label>
+          </div>
+          <div class="action-footer"><label for="l2_step_2" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P2 -->
+        <div class="q-block q-step-2">
+          <div class="q-title">Pregunta 2 de 10: Resuelve 5x - 3 = 2x + 9</div>
+          <div class="options">
+            <input type="radio" name="l2_q2" id="l2_q2_a1" class="opt-wrong"><label for="l2_q2_a1">x = 2</label>
+            <input type="radio" name="l2_q2" id="l2_q2_a2" class="opt-correct"><label for="l2_q2_a2">x = 4</label>
+            <input type="radio" name="l2_q2" id="l2_q2_a3" class="opt-wrong"><label for="l2_q2_a3">x = 6</label>
+            <input type="radio" name="l2_q2" id="l2_q2_a4" class="opt-wrong"><label for="l2_q2_a4">x = 3</label>
+          </div>
+          <div class="action-footer"><label for="l2_step_3" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P3 -->
+        <div class="q-block q-step-3">
+          <div class="q-title">Pregunta 3 de 10: Simplifica -(4a - 2b) + 3a</div>
+          <div class="options">
+            <input type="radio" name="l2_q3" id="l2_q3_a1" class="opt-correct"><label for="l2_q3_a1">-a + 2b</label>
+            <input type="radio" name="l2_q3" id="l2_q3_a2" class="opt-wrong"><label for="l2_q3_a2">7a - 2b</label>
+            <input type="radio" name="l2_q3" id="l2_q3_a3" class="opt-wrong"><label for="l2_q3_a3">-a - 2b</label>
+            <input type="radio" name="l2_q3" id="l2_q3_a4" class="opt-wrong"><label for="l2_q3_a4">a + 2b</label>
+          </div>
+          <div class="action-footer"><label for="l2_step_4" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P4 -->
+        <div class="q-block q-step-4">
+          <div class="q-title">Pregunta 4 de 10: Multiplica (x + 2)(x + 3)</div>
+          <div class="options">
+            <input type="radio" name="l2_q4" id="l2_q4_a1" class="opt-wrong"><label for="l2_q4_a1">x² + 6</label>
+            <input type="radio" name="l2_q4" id="l2_q4_a2" class="opt-correct"><label for="l2_q4_a2">x² + 5x + 6</label>
+            <input type="radio" name="l2_q4" id="l2_q4_a3" class="opt-wrong"><label for="l2_q4_a3">x² + 6x + 5</label>
+            <input type="radio" name="l2_q4" id="l2_q4_a4" class="opt-wrong"><label for="l2_q4_a4">2x + 5</label>
+          </div>
+          <div class="action-footer"><label for="l2_step_5" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P5 -->
+        <div class="q-block q-step-5">
+          <div class="q-title">Pregunta 5 de 10: Factoriza extraendo término común: 6x² + 9x</div>
+          <div class="options">
+            <input type="radio" name="l2_q5" id="l2_q5_a1" class="opt-wrong"><label for="l2_q5_a1">6x(x + 3)</label>
+            <input type="radio" name="l2_q5" id="l2_q5_a2" class="opt-correct"><label for="l2_q5_a2">3x(2x + 3)</label>
+            <input type="radio" name="l2_q5" id="l2_q5_a3" class="opt-wrong"><label for="l2_q5_a3">3(2x² + 3x)</label>
+            <input type="radio" name="l2_q5" id="l2_q5_a4" class="opt-wrong"><label for="l2_q5_a4">x(6x + 9)</label>
+          </div>
+          <div class="action-footer"><label for="l2_step_6" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P6 -->
+        <div class="q-block q-step-6">
+          <div class="q-title">Pregunta 6 de 10: Resuelve la ecuación: x/2 + 3 = 7</div>
+          <div class="options">
+            <input type="radio" name="l2_q6" id="l2_q6_a1" class="opt-correct"><label for="l2_q6_a1">x = 8</label>
+            <input type="radio" name="l2_q6" id="l2_q6_a2" class="opt-wrong"><label for="l2_q6_a2">x = 20</label>
+            <input type="radio" name="l2_q6" id="l2_q6_a3" class="opt-wrong"><label for="l2_q6_a3">x = 5</label>
+            <input type="radio" name="l2_q6" id="l2_q6_a4" class="opt-wrong"><label for="l2_q6_a4">x = 10</label>
+          </div>
+          <div class="action-footer"><label for="l2_step_7" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P7 -->
+        <div class="q-block q-step-7">
+          <div class="q-title">Pregunta 7 de 10: Aplica la regla de exponentes: (a³)²</div>
+          <div class="options">
+            <input type="radio" name="l2_q7" id="l2_q7_a1" class="opt-wrong"><label for="l2_q7_a1">a⁵</label>
+            <input type="radio" name="l2_q7" id="l2_q7_a2" class="opt-correct"><label for="l2_q7_a2">a⁶</label>
+            <input type="radio" name="l2_q7" id="l2_q7_a3" class="opt-wrong"><label for="l2_q7_a3">a⁹</label>
+            <input type="radio" name="l2_q7" id="l2_q7_a4" class="opt-wrong"><label for="l2_q7_a4">a¹</label>
+          </div>
+          <div class="action-footer"><label for="l2_step_8" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P8 -->
+        <div class="q-block q-step-8">
+          <div class="q-title">Pregunta 8 de 10: Simplifica (2x³)(4x²)</div>
+          <div class="options">
+            <input type="radio" name="l2_q8" id="l2_q8_a1" class="opt-wrong"><label for="l2_q8_a1">6x⁵</label>
+            <input type="radio" name="l2_q8" id="l2_q8_a2" class="opt-correct"><label for="l2_q8_a2">8x⁵</label>
+            <input type="radio" name="l2_q8" id="l2_q8_a3" class="opt-wrong"><label for="l2_q8_a3">8x⁶</label>
+            <input type="radio" name="l2_q8" id="l2_q8_a4" class="opt-wrong"><label for="l2_q8_a4">6x⁶</label>
+          </div>
+          <div class="action-footer"><label for="l2_step_9" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P9 -->
+        <div class="q-block q-step-9">
+          <div class="q-title">Pregunta 9 de 10: Resuelve 3(x - 1) = 15</div>
+          <div class="options">
+            <input type="radio" name="l2_q9" id="l2_q9_a1" class="opt-wrong"><label for="l2_q9_a1">x = 4</label>
+            <input type="radio" name="l2_q9" id="l2_q9_a2" class="opt-correct"><label for="l2_q9_a2">x = 6</label>
+            <input type="radio" name="l2_q9" id="l2_q9_a3" class="opt-wrong"><label for="l2_q9_a3">x = 5</label>
+            <input type="radio" name="l2_q9" id="l2_q9_a4" class="opt-wrong"><label for="l2_q9_a4">x = 18</label>
+          </div>
+          <div class="action-footer"><label for="l2_step_10" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P10 -->
+        <div class="q-block q-step-10">
+          <div class="q-title">Pregunta 10 de 10: Si a = 2 y b = -3, calcula a² - b</div>
+          <div class="options">
+            <input type="radio" name="l2_q10" id="l2_q10_a1" class="opt-correct"><label for="l2_q10_a1">7</label>
+            <input type="radio" name="l2_q10" id="l2_q10_a2" class="opt-wrong"><label for="l2_q10_a2">1</label>
+            <input type="radio" name="l2_q10" id="l2_q10_a3" class="opt-wrong"><label for="l2_q10_a3">-1</label>
+            <input type="radio" name="l2_q10" id="l2_q10_a4" class="opt-wrong"><label for="l2_q10_a4">10</label>
+          </div>
+          <div class="action-footer"><label for="l2_step_end" class="btn-next">Ver Resultados 📊</label></div>
+        </div>
+
+        <!-- RESULTADOS -->
+        <div class="result-card">
+          <h3>📊 Reporte de Desempeño - Nivel 2</h3>
+          <p>A continuación se muestra el desglose exacto de tus respuestas:</p>
+
+          <div class="score-grid">
+            <div class="score-box box-success">
+              <span class="score-val count-correct-l2"></span>
+              <span class="score-lbl">Correctas</span>
+            </div>
+            <div class="score-box box-danger">
+              <span class="score-val count-wrong-l2"></span>
+              <span class="score-lbl">Incorrectas</span>
+            </div>
+          </div>
+
+          <div class="breakdown">
+            <h4>📌 Solucionario de Preguntas</h4>
+            <ul>
+              <li><strong>P1 (2(x+4)-3):</strong> Correcta: <code>2x + 5</code></li>
+              <li><strong>P2 (5x-3 = 2x+9):</strong> Correcta: <code>x = 4</code></li>
+              <li><strong>P3 (-(4a-2b)+3a):</strong> Correcta: <code>-a + 2b</code></li>
+              <li><strong>P4 ((x+2)(x+3)):</strong> Correcta: <code>x² + 5x + 6</code></li>
+              <li><strong>P5 (Factoriza 6x²+9x):</strong> Correcta: <code>3x(2x + 3)</code></li>
+              <li><strong>P6 (x/2 + 3 = 7):</strong> Correcta: <code>x = 8</code></li>
+              <li><strong>P7 ((a³)²):</strong> Correcta: <code>a⁶</code></li>
+              <li><strong>P8 ((2x³)(4x²)):</strong> Correcta: <code>8x⁵</code></li>
+              <li><strong>P9 (3(x-1) = 15):</strong> Correcta: <code>x = 6</code></li>
+              <li><strong>P10 (a²-b con a=2, b=-3):</strong> Correcta: <code>7</code></li>
+            </ul>
+          </div>
+
+          <button type="reset" class="btn-restart">🔄 Volver al Menú</button>
+        </div>
+      </section>
+
+      <!-- ==================== NIVEL 3: AVANZADO ==================== -->
+      <section class="screen screen-level screen-l3">
+        <div class="level-header">
+          <h2>Nivel 3: Avanzado</h2>
+          <label for="nav-menu" class="btn-back">⬅ Menú Principal</label>
+        </div>
+
+        <input type="radio" name="l3_step" id="l3_step_1" checked>
+        <input type="radio" name="l3_step" id="l3_step_2">
+        <input type="radio" name="l3_step" id="l3_step_3">
+        <input type="radio" name="l3_step" id="l3_step_4">
+        <input type="radio" name="l3_step" id="l3_step_5">
+        <input type="radio" name="l3_step" id="l3_step_6">
+        <input type="radio" name="l3_step" id="l3_step_7">
+        <input type="radio" name="l3_step" id="l3_step_8">
+        <input type="radio" name="l3_step" id="l3_step_9">
+        <input type="radio" name="l3_step" id="l3_step_10">
+        <input type="radio" name="l3_step" id="l3_step_end">
+
+        <!-- P1 -->
+        <div class="q-block q-step-1">
+          <div class="q-title">Pregunta 1 de 10: Desarrolla el binomio al cuadrado: (x - 4)²</div>
+          <div class="options">
+            <input type="radio" name="l3_q1" id="l3_q1_a1" class="opt-wrong"><label for="l3_q1_a1">x² - 16</label>
+            <input type="radio" name="l3_q1" id="l3_q1_a2" class="opt-correct"><label for="l3_q1_a2">x² - 8x + 16</label>
+            <input type="radio" name="l3_q1" id="l3_q1_a3" class="opt-wrong"><label for="l3_q1_a3">x² + 8x - 16</label>
+            <input type="radio" name="l3_q1" id="l3_q1_a4" class="opt-wrong"><label for="l3_q1_a4">x² + 16</label>
+          </div>
+          <div class="action-footer"><label for="l3_step_2" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P2 -->
+        <div class="q-block q-step-2">
+          <div class="q-title">Pregunta 2 de 10: Factoriza la diferencia de cuadrados: x² - 25</div>
+          <div class="options">
+            <input type="radio" name="l3_q2" id="l3_q2_a1" class="opt-correct"><label for="l3_q2_a1">(x - 5)(x + 5)</label>
+            <input type="radio" name="l3_q2" id="l3_q2_a2" class="opt-wrong"><label for="l3_q2_a2">(x - 5)²</label>
+            <input type="radio" name="l3_q2" id="l3_q2_a3" class="opt-wrong"><label for="l3_q2_a3">(x + 5)²</label>
+            <input type="radio" name="l3_q2" id="l3_q2_a4" class="opt-wrong"><label for="l3_q2_a4">x(x - 25)</label>
+          </div>
+          <div class="action-footer"><label for="l3_step_3" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P3 -->
+        <div class="q-block q-step-3">
+          <div class="q-title">Pregunta 3 de 10: Factoriza el trinomio x² - 7x + 12</div>
+          <div class="options">
+            <input type="radio" name="l3_q3" id="l3_q3_a1" class="opt-wrong"><label for="l3_q3_a1">(x - 6)(x - 2)</label>
+            <input type="radio" name="l3_q3" id="l3_q3_a2" class="opt-correct"><label for="l3_q3_a2">(x - 3)(x - 4)</label>
+            <input type="radio" name="l3_q3" id="l3_q3_a3" class="opt-wrong"><label for="l3_q3_a3">(x + 3)(x + 4)</label>
+            <input type="radio" name="l3_q3" id="l3_q3_a4" class="opt-wrong"><label for="l3_q3_a4">(x - 12)(x + 1)</label>
+          </div>
+          <div class="action-footer"><label for="l3_step_4" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P4 -->
+        <div class="q-block q-step-4">
+          <div class="q-title">Pregunta 4 de 10: Encuentra las soluciones de x² - 9 = 0</div>
+          <div class="options">
+            <input type="radio" name="l3_q4" id="l3_q4_a1" class="opt-wrong"><label for="l3_q4_a1">x = 3 únicamente</label>
+            <input type="radio" name="l3_q4" id="l3_q4_a2" class="opt-correct"><label for="l3_q4_a2">x = 3, x = -3</label>
+            <input type="radio" name="l3_q4" id="l3_q4_a3" class="opt-wrong"><label for="l3_q4_a3">x = 9, x = -9</label>
+            <input type="radio" name="l3_q4" id="l3_q4_a4" class="opt-wrong"><label for="l3_q4_a4">x = 81</label>
+          </div>
+          <div class="action-footer"><label for="l3_step_5" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P5 -->
+        <div class="q-block q-step-5">
+          <div class="q-title">Pregunta 5 de 10: Simplifica la fracción algebraica (x² - 4) / (x - 2)</div>
+          <div class="options">
+            <input type="radio" name="l3_q5" id="l3_q5_a1" class="opt-wrong"><label for="l3_q5_a1">x - 2</label>
+            <input type="radio" name="l3_q5" id="l3_q5_a2" class="opt-correct"><label for="l3_q5_a2">x + 2</label>
+            <input type="radio" name="l3_q5" id="l3_q5_a3" class="opt-wrong"><label for="l3_q5_a3">x + 4</label>
+            <input type="radio" name="l3_q5" id="l3_q5_a4" class="opt-wrong"><label for="l3_q5_a4">x</label>
+          </div>
+          <div class="action-footer"><label for="l3_step_6" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P6 -->
+        <div class="q-block q-step-6">
+          <div class="q-title">Pregunta 6 de 10: Resuelve la ecuación cuadrática x² - 5x + 6 = 0</div>
+          <div class="options">
+            <input type="radio" name="l3_q6" id="l3_q6_a1" class="opt-correct"><label for="l3_q6_a1">x = 2 y x = 3</label>
+            <input type="radio" name="l3_q6" id="l3_q6_a2" class="opt-wrong"><label for="l3_q6_a2">x = -2 y x = -3</label>
+            <input type="radio" name="l3_q6" id="l3_q6_a3" class="opt-wrong"><label for="l3_q6_a3">x = 1 y x = 6</label>
+            <input type="radio" name="l3_q6" id="l3_q6_a4" class="opt-wrong"><label for="l3_q6_a4">x = 0 y x = 5</label>
+          </div>
+          <div class="action-footer"><label for="l3_step_7" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P7 -->
+        <div class="q-block q-step-7">
+          <div class="q-title">Pregunta 7 de 10: Simplifica (3x + 6) / 3</div>
+          <div class="options">
+            <input type="radio" name="l3_q7" id="l3_q7_a1" class="opt-wrong"><label for="l3_q7_a1">x + 6</label>
+            <input type="radio" name="l3_q7" id="l3_q7_a2" class="opt-correct"><label for="l3_q7_a2">x + 2</label>
+            <input type="radio" name="l3_q7" id="l3_q7_a3" class="opt-wrong"><label for="l3_q7_a3">3x + 2</label>
+            <input type="radio" name="l3_q7" id="l3_q7_a4" class="opt-wrong"><label for="l3_q7_a4">x + 3</label>
+          </div>
+          <div class="action-footer"><label for="l3_step_8" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P8 -->
+        <div class="q-block q-step-8">
+          <div class="q-title">Pregunta 8 de 10: ¿Cuál es el discriminante (b² - 4ac) de x² - 4x + 4 = 0?</div>
+          <div class="options">
+            <input type="radio" name="l3_q8" id="l3_q8_a1" class="opt-wrong"><label for="l3_q8_a1">16</label>
+            <input type="radio" name="l3_q8" id="l3_q8_a2" class="opt-correct"><label for="l3_q8_a2">0</label>
+            <input type="radio" name="l3_q8" id="l3_q8_a3" class="opt-wrong"><label for="l3_q8_a3">8</label>
+            <input type="radio" name="l3_q8" id="l3_q8_a4" class="opt-wrong"><label for="l3_q8_a4">-16</label>
+          </div>
+          <div class="action-footer"><label for="l3_step_9" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P9 -->
+        <div class="q-block q-step-9">
+          <div class="q-title">Pregunta 9 de 10: Multiplica (2x - 3)(2x + 3)</div>
+          <div class="options">
+            <input type="radio" name="l3_q9" id="l3_q9_a1" class="opt-correct"><label for="l3_q9_a1">4x² - 9</label>
+            <input type="radio" name="l3_q9" id="l3_q9_a2" class="opt-wrong"><label for="l3_q9_a2">4x² + 9</label>
+            <input type="radio" name="l3_q9" id="l3_q9_a3" class="opt-wrong"><label for="l3_q9_a3">2x² - 9</label>
+            <input type="radio" name="l3_q9" id="l3_q9_a4" class="opt-wrong"><label for="l3_q9_a4">4x² - 12x + 9</label>
+          </div>
+          <div class="action-footer"><label for="l3_step_10" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P10 -->
+        <div class="q-block q-step-10">
+          <div class="q-title">Pregunta 10 de 10: Factoriza completamente 2x² - 8</div>
+          <div class="options">
+            <input type="radio" name="l3_q10" id="l3_q10_a1" class="opt-correct"><label for="l3_q10_a1">2(x - 2)(x + 2)</label>
+            <input type="radio" name="l3_q10" id="l3_q10_a2" class="opt-wrong"><label for="l3_q10_a2">(2x - 4)(x + 2)</label>
+            <input type="radio" name="l3_q10" id="l3_q10_a3" class="opt-wrong"><label for="l3_q10_a3">2(x - 4)²</label>
+            <input type="radio" name="l3_q10" id="l3_q10_a4" class="opt-wrong"><label for="l3_q10_a4">(x - 2)(2x + 4)</label>
+          </div>
+          <div class="action-footer"><label for="l3_step_end" class="btn-next">Ver Resultados 📊</label></div>
+        </div>
+
+        <!-- RESULTADOS -->
+        <div class="result-card">
+          <h3>📊 Reporte de Desempeño - Nivel 3</h3>
+          <p>A continuación se muestra el desglose exacto de tus respuestas:</p>
+
+          <div class="score-grid">
+            <div class="score-box box-success">
+              <span class="score-val count-correct-l3"></span>
+              <span class="score-lbl">Correctas</span>
+            </div>
+            <div class="score-box box-danger">
+              <span class="score-val count-wrong-l3"></span>
+              <span class="score-lbl">Incorrectas</span>
+            </div>
+          </div>
+
+          <div class="breakdown">
+            <h4>📌 Solucionario de Preguntas</h4>
+            <ul>
+              <li><strong>P1 ((x-4)²):</strong> Correcta: <code>x² - 8x + 16</code></li>
+              <li><strong>P2 (x² - 25):</strong> Correcta: <code>(x - 5)(x + 5)</code></li>
+              <li><strong>P3 (x² - 7x + 12):</strong> Correcta: <code>(x - 3)(x - 4)</code></li>
+              <li><strong>P4 (x² - 9 = 0):</strong> Correcta: <code>x = 3, x = -3</code></li>
+              <li><strong>P5 ((x²-4)/(x-2)):</strong> Correcta: <code>x + 2</code></li>
+              <li><strong>P6 (x² - 5x + 6 = 0):</strong> Correcta: <code>x = 2 y x = 3</code></li>
+              <li><strong>P7 ((3x+6)/3):</strong> Correcta: <code>x + 2</code></li>
+              <li><strong>P8 (Discriminante de x²-4x+4):</strong> Correcta: <code>0</code></li>
+              <li><strong>P9 ((2x-3)(2x+3)):</strong> Correcta: <code>4x² - 9</code></li>
+              <li><strong>P10 (Factoriza 2x² - 8):</strong> Correcta: <code>2(x - 2)(x + 2)</code></li>
+            </ul>
+          </div>
+
+          <button type="reset" class="btn-restart">🔄 Volver al Menú</button>
+        </div>
+      </section>
+
+      <!-- ==================== NIVEL 4: EXPERTO ==================== -->
+      <section class="screen screen-level screen-l4">
+        <div class="level-header">
+          <h2>Nivel 4: Experto</h2>
+          <label for="nav-menu" class="btn-back">⬅ Menú Principal</label>
+        </div>
+
+        <input type="radio" name="l4_step" id="l4_step_1" checked>
+        <input type="radio" name="l4_step" id="l4_step_2">
+        <input type="radio" name="l4_step" id="l4_step_3">
+        <input type="radio" name="l4_step" id="l4_step_4">
+        <input type="radio" name="l4_step" id="l4_step_5">
+        <input type="radio" name="l4_step" id="l4_step_6">
+        <input type="radio" name="l4_step" id="l4_step_7">
+        <input type="radio" name="l4_step" id="l4_step_8">
+        <input type="radio" name="l4_step" id="l4_step_9">
+        <input type="radio" name="l4_step" id="l4_step_10">
+        <input type="radio" name="l4_step" id="l4_step_end">
+
+        <!-- P1 -->
+        <div class="q-block q-step-1">
+          <div class="q-title">Pregunta 1 de 10: Resuelve el sistema { x + y = 7 ; x - y = 1 }</div>
+          <div class="options">
+            <input type="radio" name="l4_q1" id="l4_q1_a1" class="opt-correct"><label for="l4_q1_a1">x = 4, y = 3</label>
+            <input type="radio" name="l4_q1" id="l4_q1_a2" class="opt-wrong"><label for="l4_q1_a2">x = 5, y = 2</label>
+            <input type="radio" name="l4_q1" id="l4_q1_a3" class="opt-wrong"><label for="l4_q1_a3">x = 6, y = 1</label>
+            <input type="radio" name="l4_q1" id="l4_q1_a4" class="opt-wrong"><label for="l4_q1_a4">x = 3, y = 4</label>
+          </div>
+          <div class="action-footer"><label for="l4_step_2" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P2 -->
+        <div class="q-block q-step-2">
+          <div class="q-title">Pregunta 2 de 10: Desarrolla el binomio al cubo: (x + 1)³</div>
+          <div class="options">
+            <input type="radio" name="l4_q2" id="l4_q2_a1" class="opt-wrong"><label for="l4_q2_a1">x³ + 1</label>
+            <input type="radio" name="l4_q2" id="l4_q2_a2" class="opt-correct"><label for="l4_q2_a2">x³ + 3x² + 3x + 1</label>
+            <input type="radio" name="l4_q2" id="l4_q2_a3" class="opt-wrong"><label for="l4_q2_a3">x³ + 3x + 1</label>
+            <input type="radio" name="l4_q2" id="l4_q2_a4" class="opt-wrong"><label for="l4_q2_a4">x³ + 6x² + 3x + 1</label>
+          </div>
+          <div class="action-footer"><label for="l4_step_3" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P3 -->
+        <div class="q-block q-step-3">
+          <div class="q-title">Pregunta 3 de 10: Resuelve la ecuación exponencial 2^x = 32</div>
+          <div class="options">
+            <input type="radio" name="l4_q3" id="l4_q3_a1" class="opt-correct"><label for="l4_q3_a1">x = 5</label>
+            <input type="radio" name="l4_q3" id="l4_q3_a2" class="opt-wrong"><label for="l4_q3_a2">x = 16</label>
+            <input type="radio" name="l4_q3" id="l4_q3_a3" class="opt-wrong"><label for="l4_q3_a3">x = 4</label>
+            <input type="radio" name="l4_q3" id="l4_q3_a4" class="opt-wrong"><label for="l4_q3_a4">x = 6</label>
+          </div>
+          <div class="action-footer"><label for="l4_step_4" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P4 -->
+        <div class="q-block q-step-4">
+          <div class="q-title">Pregunta 4 de 10: Evalúa log₂(8)</div>
+          <div class="options">
+            <input type="radio" name="l4_q4" id="l4_q4_a1" class="opt-wrong"><label for="l4_q4_a1">4</label>
+            <input type="radio" name="l4_q4" id="l4_q4_a2" class="opt-correct"><label for="l4_q4_a2">3</label>
+            <input type="radio" name="l4_q4" id="l4_q4_a3" class="opt-wrong"><label for="l4_q4_a3">2</label>
+            <input type="radio" name="l4_q4" id="l4_q4_a4" class="opt-wrong"><label for="l4_q4_a4">16</label>
+          </div>
+          <div class="action-footer"><label for="l4_step_5" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P5 -->
+        <div class="q-block q-step-5">
+          <div class="q-title">Pregunta 5 de 10: Factoriza la suma de cubos: x³ + 8</div>
+          <div class="options">
+            <input type="radio" name="l4_q5" id="l4_q5_a1" class="opt-correct"><label for="l4_q5_a1">(x + 2)(x² - 2x + 4)</label>
+            <input type="radio" name="l4_q5" id="l4_q5_a2" class="opt-wrong"><label for="l4_q5_a2">(x + 2)³</label>
+            <input type="radio" name="l4_q5" id="l4_q5_a3" class="opt-wrong"><label for="l4_q5_a3">(x + 2)(x² + 2x + 4)</label>
+            <input type="radio" name="l4_q5" id="l4_q5_a4" class="opt-wrong"><label for="l4_q5_a4">(x - 2)(x² + 2x + 4)</label>
+          </div>
+          <div class="action-footer"><label for="l4_step_6" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P6 -->
+        <div class="q-block q-step-6">
+          <div class="q-title">Pregunta 6 de 10: Resuelve log₃(x) = 4</div>
+          <div class="options">
+            <input type="radio" name="l4_q6" id="l4_q6_a1" class="opt-wrong"><label for="l4_q6_a1">x = 12</label>
+            <input type="radio" name="l4_q6" id="l4_q6_a2" class="opt-correct"><label for="l4_q6_a2">x = 81</label>
+            <input type="radio" name="l4_q6" id="l4_q6_a3" class="opt-wrong"><label for="l4_q6_a3">x = 64</label>
+            <input type="radio" name="l4_q6" id="l4_q6_a4" class="opt-wrong"><label for="l4_q6_a4">x = 27</label>
+          </div>
+          <div class="action-footer"><label for="l4_step_7" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P7 -->
+        <div class="q-block q-step-7">
+          <div class="q-title">Pregunta 7 de 10: Resuelve |2x - 1| = 5</div>
+          <div class="options">
+            <input type="radio" name="l4_q7" id="l4_q7_a1" class="opt-correct"><label for="l4_q7_a1">x = 3 y x = -2</label>
+            <input type="radio" name="l4_q7" id="l4_q7_a2" class="opt-wrong"><label for="l4_q7_a2">x = 3 únicamente</label>
+            <input type="radio" name="l4_q7" id="l4_q7_a3" class="opt-wrong"><label for="l4_q7_a3">x = 2 y x = -3</label>
+            <input type="radio" name="l4_q7" id="l4_q7_a4" class="opt-wrong"><label for="l4_q7_a4">x = 5 y x = -5</label>
+          </div>
+          <div class="action-footer"><label for="l4_step_8" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P8 -->
+        <div class="q-block q-step-8">
+          <div class="q-title">Pregunta 8 de 10: Racionaliza el denominador: 1 / √2</div>
+          <div class="options">
+            <input type="radio" name="l4_q8" id="l4_q8_a1" class="opt-wrong"><label for="l4_q8_a1">2 / √2</label>
+            <input type="radio" name="l4_q8" id="l4_q8_a2" class="opt-correct"><label for="l4_q8_a2">√2 / 2</label>
+            <input type="radio" name="l4_q8" id="l4_q8_a3" class="opt-wrong"><label for="l4_q8_a3">√2</label>
+            <input type="radio" name="l4_q8" id="l4_q8_a4" class="opt-wrong"><label for="l4_q8_a4">1 / 2</label>
+          </div>
+          <div class="action-footer"><label for="l4_step_9" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P9 -->
+        <div class="q-block q-step-9">
+          <div class="q-title">Pregunta 9 de 10: Resuelve la inecuación 3x - 2 > 7</div>
+          <div class="options">
+            <input type="radio" name="l4_q9" id="l4_q9_a1" class="opt-correct"><label for="l4_q9_a1">x > 3</label>
+            <input type="radio" name="l4_q9" id="l4_q9_a2" class="opt-wrong"><label for="l4_q9_a2">x < 3</label>
+            <input type="radio" name="l4_q9" id="l4_q9_a3" class="opt-wrong"><label for="l4_q9_a3">x > 5/3</label>
+            <input type="radio" name="l4_q9" id="l4_q9_a4" class="opt-wrong"><label for="l4_q9_a4">x > 9</label>
+          </div>
+          <div class="action-footer"><label for="l4_step_10" class="btn-next">Siguiente ➔</label></div>
+        </div>
+
+        <!-- P10 -->
+        <div class="q-block q-step-10">
+          <div class="q-title">Pregunta 10 de 10: Determina la pendiente de la recta 2x + y = 5</div>
+          <div class="options">
+            <input type="radio" name="l4_q10" id="l4_q10_a1" class="opt-correct"><label for="l4_q10_a1">m = -2</label>
+            <input type="radio" name="l4_q10" id="l4_q10_a2" class="opt-wrong"><label for="l4_q10_a2">m = 2</label>
+            <input type="radio" name="l4_q10" id="l4_q10_a3" class="opt-wrong"><label for="l4_q10_a3">m = 5</label>
+            <input type="radio" name="l4_q10" id="l4_q10_a4" class="opt-wrong"><label for="l4_q10_a4">m = 1/2</label>
+          </div>
+          <div class="action-footer"><label for="l4_step_end" class="btn-next">Ver Resultados 📊</label></div>
+        </div>
+
+        <!-- RESULTADOS -->
+        <div class="result-card">
+          <h3>📊 Reporte de Desempeño - Nivel 4</h3>
+          <p>A continuación se muestra el desglose exacto de tus respuestas:</p>
+
+          <div class="score-grid">
+            <div class="score-box box-success">
+              <span class="score-val count-correct-l4"></span>
+              <span class="score-lbl">Correctas</span>
+            </div>
+            <div class="score-box box-danger">
+              <span class="score-val count-wrong-l4"></span>
+              <span class="score-lbl">Incorrectas</span>
+            </div>
+          </div>
+
+          <div class="breakdown">
+            <h4>📌 Solucionario de Preguntas</h4>
+            <ul>
+              <li><strong>P1 (Sistema x+y=7, x-y=1):</strong> Correcta: <code>x = 4, y = 3</code></li>
+              <li><strong>P2 ((x+1)³):</strong> Correcta: <code>x³ + 3x² + 3x + 1</code></li>
+              <li><strong>P3 (2^x = 32):</strong> Correcta: <code>x = 5</code></li>
+              <li><strong>P4 (log₂(8)):</strong> Correcta: <code>3</code></li>
+              <li><strong>P5 (x³ + 8):</strong> Correcta: <code>(x + 2)(x² - 2x + 4)</code></li>
+              <li><strong>P6 (log₃(x) = 4):</strong> Correcta: <code>x = 81</code></li>
+              <li><strong>P7 (|2x - 1| = 5):</strong> Correcta: <code>x = 3 y x = -2</code></li>
+              <li><strong>P8 (Racionalizar 1/√2):</strong> Correcta: <code>√2 / 2</code></li>
+              <li><strong>P9 (3x - 2 > 7):</strong> Correcta: <code>x > 3</code></li>
+              <li><strong>P10 (Pendiente 2x + y = 5):</strong> Correcta: <code>m = -2</code></li>
+            </ul>
+          </div>
+
+          <button type="reset" class="btn-restart">🔄 Volver al Menú</button>
+        </div>
+      </section>
+
+    </div>
+  </form>
+
+  <script>
+    // ==================== CONTADOR DE RESPUESTAS ====================
+    // Cuenta las respuestas seleccionadas por nivel y muestra
+    // correctamente cuántas fueron correctas e incorrectas.
+    document.addEventListener('DOMContentLoaded', function () {
+      const niveles = [1, 2, 3, 4];
+
+      function actualizarContadores() {
+        niveles.forEach(function (nivel) {
+          const pantalla = document.querySelector('.screen-l' + nivel);
+          if (!pantalla) return;
+
+          const respuestas = pantalla.querySelectorAll('input[type="radio"][name^="l' + nivel + '_q"]');
+          const seleccionadas = pantalla.querySelectorAll('input[type="radio"][name^="l' + nivel + '_q"]:checked');
+          const correctas = pantalla.querySelectorAll('input[type="radio"][name^="l' + nivel + '_q"].opt-correct:checked');
+
+          const total = respuestas.length / 4; // 4 alternativas por pregunta
+          const correctasCount = correctas.length;
+          const respondidasCount = seleccionadas.length;
+          const incorrectasCount = respondidasCount - correctasCount;
+
+          const correcto = pantalla.querySelector('.count-correct-l' + nivel);
+          const incorrecto = pantalla.querySelector('.count-wrong-l' + nivel);
+
+          if (correcto) correcto.textContent = correctasCount;
+          if (incorrecto) incorrecto.textContent = incorrectasCount;
+        });
+      }
+
+      // Cada vez que se selecciona una respuesta, actualizar el marcador.
+      document.querySelectorAll('input[type="radio"][class*="opt-"]').forEach(function (radio) {
+        radio.addEventListener('change', actualizarContadores);
+      });
+
+      // Actualizar también al cambiar de pantalla.
+      document.querySelectorAll('input[name="screen-nav"], input[name^="l"]:not([name*="q"])').forEach(function (radio) {
+        radio.addEventListener('change', actualizarContadores);
+      });
+
+      // Al reiniciar el formulario, volver a 0 correctas / 0 incorrectas.
+      const formulario = document.querySelector('.quiz-form');
+      if (formulario) {
+        formulario.addEventListener('reset', function () {
+          setTimeout(actualizarContadores, 0);
+        });
+      }
+
+      actualizarContadores();
+    });
+  </script>
+
+</body>
+</html>
